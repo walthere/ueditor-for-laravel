@@ -117,9 +117,8 @@ class Uploader
             $this->stateInfo = $this->getStateInfo("ERROR_DIR_NOT_WRITEABLE");
             return;
         }
-        //$img = Image::make($file['tmp_name'])->save($this->filePath);
         //移动文件
-        if (!(Image::make($file['tmp_name'])->save($this->filePath)) && file_exists($this->filePath)) { //移动失败
+        if (!(move_uploaded_file($file["tmp_name"], $this->filePath) && file_exists($this->filePath))) { //移动失败
             $this->stateInfo = $this->getStateInfo("ERROR_FILE_MOVE");
         } else { //移动成功
             $this->stateInfo = $this->stateMap[0];
