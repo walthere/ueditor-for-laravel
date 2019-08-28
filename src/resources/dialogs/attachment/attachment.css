@@ -679,3 +679,12 @@ i.file-preview.file-type-png,
 i.file-preview.file-type-psd{
     background-position: -140px center;
 }
+
+
+.attachment-info{
+    padding: 5px;
+}
+
+.attachment-info span{
+    color:#F26C4F ;
+}

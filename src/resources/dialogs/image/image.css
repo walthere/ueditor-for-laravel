@@ -892,3 +892,11 @@
 #search .searchList .clearFloat{
     clear: both;
 }
+
+.image-info{
+    padding: 5px;
+}
+
+.image-info span{
+    color:#F26C4F ;
+}

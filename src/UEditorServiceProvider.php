@@ -27,7 +27,7 @@ class UEditorServiceProvider extends ServiceProvider
             realpath(__DIR__ . '/views') => base_path('resources/views/vendor/UEditor'),
         ], 'view');
         $this->publishes([
-            realpath(__DIR__ . '/resources') => public_path() . '/UEditor',
+            realpath(__DIR__ . '/resources') => public_path() . '/assets/js/UEditor',
         ], 'assets');
     }
 
