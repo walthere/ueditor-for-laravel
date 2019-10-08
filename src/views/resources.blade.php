@@ -1,4 +1,4 @@
-@if( null != $config  && '' != $config)
+@if(isset($config))
     <script type="text/javascript" charset="utf-8"
             src="{!!asset('assets/js/UEditor/'.$config.'.config.js')!!}"></script>
 @else
